@@ -1,22 +1,13 @@
-<html>
-    <head>
-        <title>Django Python blog</title>
-    </head>
-    <body>
-        <div>
-            <h1><a href="/">Django Python blog</a></h1>
-        </div>
+{% extends 'blog/base.html' %}
 
-        <div>
-            <p>Django Python blog</p>
-            <h2><a href="">Django Python blog</a></h2>
-            <p>Django Python blog</p>
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+            <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+            <p>{{ post.text|linebreaksbr }}</p>
         </div>
-
-        <div>
-            <p>公開日: 2022/06/14, 12:14</p>
-            <h2><a href=""></a></h2>
-            <p> こんにちは！ よろしくお願いします！ </p>
-        </div>
-    </body>
-</html>
+    {% endfor %}
+{% endblock %}
