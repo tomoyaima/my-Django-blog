@@ -1,0 +1,35 @@
+{
+  "name": "djangogirls",
+  "version": "1.0.0",
+  "description": "pip3.6 install --user pythonanywhere\r pa_autoconfigure_django.py --python=3.6 https://github.com/tomoyaima/my-Django-blog.git --nuke\r cd https://github.com/tomoyaima/my-Django-blog.git\r py -3.6 pip install djangorestframework\r pip3.6  install  --usr djangorestframework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development ./blog/src/index.js --output-path ./blog/static/frontend/",
+    "build": "webpack --mode production ./blog/src/index.js --output-path ./blog/static/frontend/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomoyaima/my-Django-blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomoyaima/my-Django-blog/issues"
+  },
+  "homepage": "https://github.com/tomoyaima/my-Django-blog#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^8.2.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
