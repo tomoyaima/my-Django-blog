@@ -1,7 +1,7 @@
 {% load static %}
 <html>
     <head>
-        <title>にーとのとも|社畜ブログ</title>
+        <title>ブログ</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -16,12 +16,12 @@
     {% else %}
         <a href="{% url 'login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a>
     {% endif %}
-            <h1><a href="/">にーとのともの社畜ブログ</a></h1>
+            <h1><a href="/">筋トレサイト</a></h1>
         </div>
         <div class="content container">
             <div class="row">
                 <div class="col-md-8">
-                    <a href="{% url 'post_list' %}">社畜ブログ</a>
+                    <a href="{% url 'post_list' %}">ブログ</a>
                     {% block content %}
                     {% endblock %}
                 </div>
