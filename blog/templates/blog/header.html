@@ -1,0 +1,17 @@
+<header>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo">ブログ</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+            {% if user.is_authenticated %}
+            <li><a href="{% url 'post_new' %}"><span class="glyphicon glyphicon-plus"></span></a></li>
+            <li><a href="{% url 'post_draft_list' %}"><span class="glyphicon glyphicon-edit"></span></a></li>
+            <li>Hello,  {{ user.username }}</li>
+            <li><a href="{% url 'logout' %}">Log out</a></li>
+            {% else %}
+            <li><a href="{% url 'login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a></li>
+            {% endif %}
+            </ul>
+        </div>
+    </nav>
+</header>
